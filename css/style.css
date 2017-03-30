@@ -1,0 +1,222 @@
+* {
+	box-sizing: border-box;
+
+}
+
+/* NAVIGATION */
+
+.navbar {
+  width:100%;
+  height:75px;
+  top:0px;
+  position:absolute;
+  z-index: 998;
+  background:red;
+}
+
+.navbar a {
+  font-size:16px;
+  color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding-left:20px;
+	text-align:center;
+	line-height:75px;
+}
+
+.navbar .titleh1 {
+  font-size:26px;
+	padding-left:70px;
+
+}
+
+.navbar .rwd img {
+	display:none;
+}
+
+.navbar .rwd ul li {
+	display:inline-block;
+}
+
+/* ACCUEIL VIDEO */
+
+#accueil video {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+      background-image: /* our video */;
+      background-position: center center;
+      background-size: contain;
+      object-fit: cover; /*cover video background */
+      z-index:3;
+
+
+
+}
+
+/* ACCUEIL CLAQUE AVEC H 1*/
+
+ .layer {
+  position:absolute;
+  z-index:1000;
+  height:100%;
+  width:100%;
+  margin-top:-100px;
+}
+
+.layer h1 {
+font-size:86px;
+  text-align:center;
+  margin-bottom:5px;
+
+}
+
+
+.layer h2 {
+  font-size:20px;
+  text-align:center;
+  letter-spacing:30px;
+  margin-bottom:100px;
+}
+
+/*TROIS BOUTONS */
+
+.layer .buttoncontainer {
+  width:600px;
+  margin:0 auto;
+}
+
+.layer .buttoncontainer a {
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+
+.layer .buttoncontainer a div {
+  border-style: solid;
+  border-width: 1px;
+  border-radius:50px;
+  height:60px;
+  width:180px;
+  padding-left:25px;
+  vertical-align: top;
+  padding-top:8px;
+  margin-right:30px;
+}
+
+.layer .buttoncontainer a:nth-child(3) div {
+margin-right:0px;
+}
+
+.layer .buttoncontainer a h5 {
+display:inline-block;
+  font-size:16px;
+  vertical-align:middle;
+  text-align:center;
+  margin-left:10px;
+
+}
+
+
+
+
+/* =============================================================================================*/
+@media (max-width: 1080px) {
+
+/*GESTION DU MENU RWD*/
+	.navbar .rwd img {
+		display:block;
+		margin:0 auto;
+		margin-top:20px;
+	}
+
+	.navbar .rwd ul  {
+		display:none;
+	}
+
+	.navbar .rwd:hover ul  {
+		display:block;
+		width:100%;
+		background:black;
+		position:absolute;
+		top:75px;
+		left:0px;
+	}
+
+	.navbar .rwd ul li {
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	.navbar .rwd ul li:hover {
+background:grey;
+	}
+
+	.navbar .rwd ul li a {
+ 		padding:0;
+	}
+
+
+}
+
+
+
+/* =============================================================================================*/
+@media (max-width: 620px) {
+
+/*GESTION DU TITRE POUR LE MENU*/
+	.navbar .titleh1 {
+	  font-size:26px;
+		padding-left:0px;
+		text-align:center;
+		width:100%;
+	display:block;
+	}
+
+/*POSITIONNEMENT DU MENU*/
+	.navbar .rwd:hover ul  {top:150px;}
+
+
+
+/*MARGE EN DESSOUS DU H2*/
+	.layer h2 {
+
+	  margin-bottom:50px;
+	}
+
+	/*GESTION DU TITRE POUR HEADER*/
+		.layer h1 {
+		font-size:50px;
+
+
+		}
+
+
+		.layer h2 {
+		  font-size:16px;
+			letter-spacing:15px;
+		}
+
+
+/*TROIS BOUTONS */
+
+	.layer .buttoncontainer {
+		width:180px;
+	}
+
+	.layer .buttoncontainer a div {
+		margin-bottom:20px;
+	  margin-right:0px;
+	}
+
+
+
+}
